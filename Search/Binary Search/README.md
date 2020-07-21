@@ -4,7 +4,7 @@
 
 Iterative implementation of binary search:
 ```Swift
-func binarySearch <T: Comparable> (_ array: [T], key: T) -> Int? {
+func binarySearch<T: Comparable>(_ array: [T], key: T) -> Int? {
     var lowerBound = 0
     var upperBound = array.count
     while lowerBound < upperBound {
@@ -23,7 +23,7 @@ func binarySearch <T: Comparable> (_ array: [T], key: T) -> Int? {
 
 Recursive implementation of binary search:
 ```Swift
-func binarySearch <T: Comparable> (_ array: [T], key: T, range: Range<Int>) -> Int? {
+func binarySearch<T: Comparable>(_ array: [T], key: T, range: Range<Int>) -> Int? {
     if range.lowerBound >= range.upperBound {
         // If we get here, then the search key is not present in the array.
         return nil
