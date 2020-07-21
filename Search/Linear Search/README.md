@@ -4,7 +4,7 @@
 
 Basic implementation of linear search:
 ```Swift
-func linearSearch <T: Equatable> (array: [T], object: T) -> Int? {
+func linearSearch<T: Equatable>(array: [T], object: T) -> Int? {
     for (index, obj) in array.enumerated() where obj == object {
         return index
     }
